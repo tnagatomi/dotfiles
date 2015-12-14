@@ -1,81 +1,40 @@
-" NeoBundle Scripts-----------------------------
-" Note: Skip initialization for vim-tiny or vim-small.
-if 0 | endif
+call plug#begin('~/.vim/plugged')
 
-if has('vim_starting')
-  if &compatible
-    set nocompatible               " Be iMproved
-  endif
-
-  " Required:
-  set runtimepath+=~/.vim/bundle/neobundle.vim/
-endif
-
-" Required:
-call neobundle#begin(expand('~/.vim/bundle/'))
-
-" Let NeoBundle manage NeoBundle
-" Required:
-NeoBundleFetch 'Shougo/neobundle.vim'
-
-" Add or remove your Bundles here:
-NeoBundle 'Shougo/neosnippet.vim'
-NeoBundle 'Shougo/neosnippet-snippets'
-NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'ctrlpvim/ctrlp.vim'
-NeoBundle 'flazz/vim-colorschemes'
+Plug 'Shougo/neosnippet.vim'
+Plug 'Shougo/neosnippet-snippets'
+Plug 'tpope/vim-fugitive'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'flazz/vim-colorschemes'
 
 " vimproc
-NeoBundle 'Shougo/vimproc', {
-    \ 'build' : {
-    \     'windows' : 'make -f make_mingw32.mak',
-    \     'cygwin' : 'make -f make_cygwin.mak',
-    \     'mac' : 'make -f make_mac.mak',
-    \     'unix' : 'make -f make_unix.mak',
-    \    },
-    \ }
+Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 
 " vim-airline
-NeoBundle 'bling/vim-airline'
+Plug 'bling/vim-airline'
 
 " C++ syntax highlighting
-NeoBundleLazy 'vim-jp/cpp-vim', {
-            \ 'autoload' : {'filetypes' : 'cpp'}
-            \ }
+Plug 'vim-jp/cpp-vim', { 'for': 'cpp' }
+
 " Completion
-NeoBundle 'Shougo/neocomplete.vim'
-NeoBundle 'Shougo/neoinclude.vim'
-NeoBundle 'justmao945/vim-clang'
+Plug 'Shougo/neocomplete.vim'
+Plug 'Shougo/neoinclude.vim'
+Plug 'justmao945/vim-clang'
 " Auto completion for quotes etc
-NeoBundle 'Raimondi/delimitMate'
+Plug 'Raimondi/delimitMate'
 
 " quickrun.vim
-NeoBundle 'thinca/vim-quickrun'
+Plug 'thinca/vim-quickrun'
 
 " obsession.vim
-NeoBundle 'tpope/vim-obsession'
+Plug 'tpope/vim-obsession'
 
 " unimpaired.vim
-NeoBundle 'tpope/vim-unimpaired'
+Plug 'tpope/vim-unimpaired'
 
 " abolish.vim
-NeoBundle 'tpope/vim-abolish'
+Plug 'tpope/vim-abolish'
 
-
-" You can specify revision/branch/tag.
-NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
-
-" Required:
-call neobundle#end()
-
-" Required:
-filetype plugin indent on
-
-" If there are uninstalled bundles found on startup,
-" this will conveniently prompt you to install them.
-NeoBundleCheck
-"End NeoBundle Scripts-------------------------"
-
+call plug#end()
 
 " Neosnippet config-----------------------------
 " Plugin key-mappings.
