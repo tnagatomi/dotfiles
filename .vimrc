@@ -10,7 +10,7 @@ Plug 'flazz/vim-colorschemes'
 Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 
 " vim-airline
-Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline'
 
 " C++ syntax highlighting
 Plug 'vim-jp/cpp-vim', { 'for': 'cpp' }
