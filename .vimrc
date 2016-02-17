@@ -15,6 +15,9 @@ Plug 'thinca/vim-quickrun'
 Plug 'tpope/vim-obsession'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-abolish'
+Plug 'plasticboy/vim-markdown'
+Plug 'kannokanno/previm'
+Plug 'tyru/open-browser.vim'
 call plug#end()
 
 " Neosnippet config-----------------------------
@@ -77,6 +80,13 @@ let g:quickrun_config = {
 \   },
 \}
 "End quickrun.vim config-----------------------"
+
+" previm config--------------------------------"
+augroup PrevimSettings
+    autocmd!
+    autocmd BufNewFile,BufRead *.{md,mdwn,mkd,mkdn,mark*} set filetype=markdown
+augroup END
+" End previm config----------------------------"
 
 " Enable matchit
 runtime macros/matchit.vim
