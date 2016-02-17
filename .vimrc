@@ -1,39 +1,20 @@
 call plug#begin('~/.vim/plugged')
-
 Plug 'Shougo/neosnippet.vim'
 Plug 'Shougo/neosnippet-snippets'
 Plug 'tpope/vim-fugitive'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'flazz/vim-colorschemes'
-
-" vimproc
 Plug 'Shougo/vimproc.vim', { 'do': 'make' }
-
-" vim-airline
 Plug 'vim-airline/vim-airline'
-
-" C++ syntax highlighting
 Plug 'vim-jp/cpp-vim', { 'for': 'cpp' }
-
-" Completion
 Plug 'Shougo/neocomplete.vim'
 Plug 'Shougo/neoinclude.vim'
 Plug 'justmao945/vim-clang'
-" Auto completion for quotes etc
 Plug 'Raimondi/delimitMate'
-
-" quickrun.vim
 Plug 'thinca/vim-quickrun'
-
-" obsession.vim
 Plug 'tpope/vim-obsession'
-
-" unimpaired.vim
 Plug 'tpope/vim-unimpaired'
-
-" abolish.vim
 Plug 'tpope/vim-abolish'
-
 call plug#end()
 
 " Neosnippet config-----------------------------
