@@ -122,6 +122,11 @@ endif
 " Display line numbers
 set number
 
+" Show invisible characters
+set list
+" Use the same symbols as TextMate for tabstops and EOLs
+set listchars=tab:▸\ ,eol:¬
+
 " Incremental search
 set incsearch
 " Case insensitive search
