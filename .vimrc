@@ -102,6 +102,9 @@ runtime macros/matchit.vim
 " Turn off vi compatible mode
 set nocompatible
 
+" Enable file type detection
+filetype plugin indent on
+
 " Delete a character with backspace in insert mode
 set backspace=start,eol,indent
 
