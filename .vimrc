@@ -113,10 +113,11 @@ if &t_Co > 2 || has("gui_running")
   syntax on
 endif
 
+" Unnecessary config when using vim-airline
 " Always show status line
-set laststatus=2
+" set laststatus=2
 " Display long a path filename for status line
-set statusline=%F%r%h%=
+" set statusline=%F%r%h%=
 
 " Display line numbers
 set number
