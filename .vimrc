@@ -105,6 +105,9 @@ set nocompatible
 " Enable file type detection
 filetype plugin indent on
 
+" Enable True Color
+set termguicolors
+
 " Delete a character with backspace in insert mode
 set backspace=start,eol,indent
 
