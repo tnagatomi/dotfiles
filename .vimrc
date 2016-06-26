@@ -1,15 +1,10 @@
 call plug#begin('~/.vim/plugged')
-Plug 'Shougo/neosnippet.vim'
-Plug 'Shougo/neosnippet-snippets'
 Plug 'tpope/vim-fugitive'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'flazz/vim-colorschemes'
 Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 Plug 'vim-airline/vim-airline'
 Plug 'vim-jp/cpp-vim', { 'for': 'cpp' }
-Plug 'Shougo/neocomplete.vim'
-Plug 'Shougo/neoinclude.vim'
-Plug 'justmao945/vim-clang'
 Plug 'Raimondi/delimitMate'
 Plug 'thinca/vim-quickrun'
 Plug 'tpope/vim-obsession'
@@ -19,52 +14,6 @@ Plug 'plasticboy/vim-markdown'
 Plug 'kannokanno/previm'
 Plug 'tyru/open-browser.vim'
 call plug#end()
-
-" Neosnippet config-----------------------------
-" Plugin key-mappings.
-imap <C-k>     <Plug>(neosnippet_expand_or_jump)
-smap <C-k>     <Plug>(neosnippet_expand_or_jump)
-xmap <C-k>     <Plug>(neosnippet_expand_target)
-
-" SuperTab like snippets behavior.
-imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
-\ "\<Plug>(neosnippet_expand_or_jump)"
-\: pumvisible() ? "\<C-n>" : "\<TAB>"
-smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
-\ "\<Plug>(neosnippet_expand_or_jump)"
-\: "\<TAB>"
-
-" For conceal markers.
-if has('conceal')
-  set conceallevel=2 concealcursor=niv
-endif
-"End Neosnippet config-------------------------"
-
-" neocomplete and vim-clang config-------------"
-let g:neocomplete#enable_at_startup = 1
-
-" disable auto completion for vim-clang
-let g:clang_auto = 0
-" default 'longest' can not work with neocomplete
-let g:clang_c_completeopt = 'menuone,preview'
-let g:clang_cpp_completeopt = 'menuone,preview'
-
-" use neocomplete
-" input patterns
-if !exists('g:neocomplete#force_omni_input_patterns')
-  let g:neocomplete#force_omni_input_patterns = {}
-endif
-
-" for c and c++
-let g:neocomplete#force_omni_input_patterns.c =
-      \ '[^.[:digit:] *\t]\%(\.\|->\)\w*'
-let g:neocomplete#force_omni_input_patterns.cpp =
-      \ '[^.[:digit:] *\t]\%(\.\|->\)\w*\|\h\w*::\w*'
-
-let g:clang_c_options = '-std=gnu11'
-let g:clang_cpp_options = '-std=c++11 -stdlib=libc++'
-"End neocomplete and vim-clang config----------"
-
 
 " delimitMate config----------------------------
 " Auto indent
