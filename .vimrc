@@ -13,6 +13,8 @@ Plug 'tpope/vim-abolish'
 Plug 'plasticboy/vim-markdown'
 Plug 'kannokanno/previm'
 Plug 'tyru/open-browser.vim'
+Plug 'elixir-lang/vim-elixir'
+Plug 'slashmili/alchemist.vim'
 call plug#end()
 
 " delimitMate config----------------------------
