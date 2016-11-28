@@ -118,11 +118,17 @@ function peco-find-file() {
     fi
     selected_files=$(echo $source_files | peco --prompt "[find file]")
 
-    BUFFER="${BUFFER}${echo $selected_files | tr '\n' ' '}"
+    result=''
+    for file in $selected_files; do
+        result="${result}$(echo $file | tr '\n' ' ')"
+    done
+
+    BUFFER="${BUFFER}${result}"
     CURSOR=$#BUFFER
     zle redisplay
 }
 zle -N peco-find-file
+
 bindkey '^q' peco-find-file
 
 # Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
