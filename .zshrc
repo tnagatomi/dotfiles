@@ -145,3 +145,5 @@ export PATH=$ANDROID_SDK_ROOT:$PATH
 export PATH=$ANDROID_SDK_ROOT/tools:$ANDROID_SDK_ROOT/platform-tools:$PATH
 
 eval "$(pyenv init -)"
+export PATH="/usr/local/opt/libxml2/bin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
