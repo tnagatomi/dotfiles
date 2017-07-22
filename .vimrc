@@ -15,6 +15,7 @@ Plug 'kannokanno/previm'
 Plug 'tyru/open-browser.vim'
 Plug 'elixir-lang/vim-elixir'
 Plug 'slashmili/alchemist.vim'
+Plug 'dracula/vim'
 call plug#end()
 
 " delimitMate config----------------------------
