@@ -16,6 +16,7 @@ Plug 'tyru/open-browser.vim'
 Plug 'elixir-lang/vim-elixir'
 Plug 'slashmili/alchemist.vim'
 Plug 'dracula/vim'
+Plug 'elmcast/elm-vim'
 call plug#end()
 
 " delimitMate config----------------------------
@@ -47,6 +48,10 @@ augroup PrevimSettings
     autocmd BufNewFile,BufRead *.{md,mdwn,mkd,mkdn,mark*} set filetype=markdown
 augroup END
 " End previm config----------------------------"
+
+" elm-format config----------------------------"
+let g:elm_format_autosave = 1
+" End elm-format config------------------------"
 
 " Enable matchit
 runtime macros/matchit.vim
