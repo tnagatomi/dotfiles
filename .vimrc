@@ -54,6 +54,12 @@ augroup END
 let g:elm_format_autosave = 1
 " End elm-format config------------------------"
 
+" YouCompleteMe config-------------------------"
+let g:ycm_semantic_triggers = {
+     \ 'elm' : ['.'],
+     \}
+" End YouCompleteMe config---------------------"
+
 " Enable matchit
 runtime macros/matchit.vim
 
