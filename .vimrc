@@ -17,6 +17,7 @@ Plug 'elixir-lang/vim-elixir'
 Plug 'slashmili/alchemist.vim'
 Plug 'dracula/vim'
 Plug 'elmcast/elm-vim'
+Plug 'Valloric/YouCompleteMe'
 call plug#end()
 
 " delimitMate config----------------------------
