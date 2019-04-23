@@ -2,22 +2,15 @@ call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-fugitive'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'flazz/vim-colorschemes'
-Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 Plug 'vim-airline/vim-airline'
-Plug 'vim-jp/cpp-vim', { 'for': 'cpp' }
 Plug 'Raimondi/delimitMate'
-Plug 'thinca/vim-quickrun'
 Plug 'tpope/vim-obsession'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-abolish'
 Plug 'plasticboy/vim-markdown'
 Plug 'kannokanno/previm'
 Plug 'tyru/open-browser.vim'
-Plug 'elixir-lang/vim-elixir'
-Plug 'slashmili/alchemist.vim'
 Plug 'dracula/vim'
-Plug 'elmcast/elm-vim'
-Plug 'Valloric/YouCompleteMe'
 call plug#end()
 
 " delimitMate config----------------------------
@@ -25,15 +18,6 @@ call plug#end()
 let delimitMate_expand_cr = 1
 let delimitMate_expand_space = 1
 "End delimitMate config------------------------"
-
-" quickrun.vim config--------------------------"
-let g:quickrun_config = {
-\   "_" : {
-\       "runner" : "vimproc",
-\       "runner/vimproc/updatetime" : 60
-\   },
-\}
-"End quickrun.vim config-----------------------"
 
 " vim-airline config---------------------------"
 " Show total number of lines
@@ -49,16 +33,6 @@ augroup PrevimSettings
     autocmd BufNewFile,BufRead *.{md,mdwn,mkd,mkdn,mark*} set filetype=markdown
 augroup END
 " End previm config----------------------------"
-
-" elm-format config----------------------------"
-let g:elm_format_autosave = 1
-" End elm-format config------------------------"
-
-" YouCompleteMe config-------------------------"
-let g:ycm_semantic_triggers = {
-     \ 'elm' : ['.'],
-     \}
-" End YouCompleteMe config---------------------"
 
 " Enable matchit
 runtime macros/matchit.vim
