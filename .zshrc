@@ -32,5 +32,8 @@ zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-completions
 zinit light zdharma/fast-syntax-highlighting
 
+# Enable advanced completion
+autoload -U compinit && compinit
+
 # anyenv
 eval "$(anyenv init -)"
