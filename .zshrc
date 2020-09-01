@@ -38,5 +38,10 @@ zinit light zdharma/fast-syntax-highlighting
 # Enable advanced completion
 autoload -U compinit && compinit
 
+# History
+export HISTFILE=${HOME}/.zsh_history
+export HISTSIZE=1000
+export SAVEHIST=100000
+
 # anyenv
 eval "$(anyenv init -)"
