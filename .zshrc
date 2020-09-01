@@ -21,8 +21,10 @@ autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
 ### End of Zinit's installer chunk
 
+# fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# Powerlevel10k
 zinit ice depth=1; zinit light romkatv/powerlevel10k
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
