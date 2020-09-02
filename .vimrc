@@ -47,6 +47,9 @@ filetype plugin indent on
 " Enable True Color
 set termguicolors
 
+" Yank to system clipboard
+set clipboard^=unnamed
+
 " Delete a character with backspace in insert mode
 set backspace=start,eol,indent
 
