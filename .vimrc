@@ -1,7 +1,6 @@
 call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-fugitive'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'flazz/vim-colorschemes'
 Plug 'vim-airline/vim-airline'
 Plug 'Raimondi/delimitMate'
 Plug 'tpope/vim-obsession'
@@ -10,8 +9,10 @@ Plug 'tpope/vim-abolish'
 Plug 'plasticboy/vim-markdown'
 Plug 'kannokanno/previm'
 Plug 'tyru/open-browser.vim'
-Plug 'dracula/vim'
+Plug 'dracula/vim', { 'as': 'dracula' }
 call plug#end()
+
+colorscheme dracula
 
 " delimitMate config----------------------------
 " Auto indent
