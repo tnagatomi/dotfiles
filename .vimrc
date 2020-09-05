@@ -1,5 +1,4 @@
 call plug#begin('~/.vim/plugged')
-Plug 'tpope/vim-fugitive'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'Raimondi/delimitMate'
