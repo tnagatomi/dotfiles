@@ -4,7 +4,6 @@ Plug 'Raimondi/delimitMate'
 Plug 'tpope/vim-obsession'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-abolish'
-Plug 'plasticboy/vim-markdown'
 Plug 'kannokanno/previm'
 Plug 'tyru/open-browser.vim'
 Plug 'dracula/vim', { 'as': 'dracula' }
