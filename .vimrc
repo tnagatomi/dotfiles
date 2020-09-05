@@ -4,8 +4,6 @@ Plug 'Raimondi/delimitMate'
 Plug 'tpope/vim-obsession'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-abolish'
-Plug 'kannokanno/previm'
-Plug 'tyru/open-browser.vim'
 Plug 'dracula/vim', { 'as': 'dracula' }
 call plug#end()
 
@@ -24,13 +22,6 @@ function! AirlineInit()
 endfunction
 autocmd VimEnter * call AirlineInit()
 " End vim-airline config-----------------------"
-
-" previm config--------------------------------"
-augroup PrevimSettings
-    autocmd!
-    autocmd BufNewFile,BufRead *.{md,mdwn,mkd,mkdn,mark*} set filetype=markdown
-augroup END
-" End previm config----------------------------"
 
 " Enable matchit
 runtime macros/matchit.vim
