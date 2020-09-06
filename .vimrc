@@ -106,13 +106,14 @@ cnoremap <C-n> <Down>
 " Disable search highlights
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 
-" Bubble single lines
+" Move single lines
 " Note: 'unimpaired.vim' is required
-nmap <C-Up> [e
-nmap <C-Down> ]e
-" Bubble multiple lines
-vmap <C-Up> [egv
-vmap <C-Down> ]egv
+" Key bindings are same as JetBrains IDEs
+nmap <M-S-Up> [e
+nmap <M-S-Down> ]e
+" Move multiple lines
+vmap <M-S-Up> [egv
+vmap <M-S-Down> ]egv
 
 " Visually select the text that was last edited/pasted
 nmap gV `[v`]
