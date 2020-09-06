@@ -22,6 +22,11 @@ autoload -Uz _zinit
 ### End of Zinit's installer chunk
 
 # fzf
+## Use fd for traversing files
+export FZF_DEFAULT_COMMAND='fd --type file --color=always --follow --hidden --exclude .git'
+## Output with colors
+export FZF_DEFAULT_OPTS="--ansi"
+## Load fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Powerlevel10k
