@@ -41,14 +41,6 @@ set clipboard^=unnamed
 " Delete a character with backspace in insert mode
 set backspace=start,eol,indent
 
-" Always show status line
-set laststatus=2
-" Display long a path filename for status line
-set statusline=%F%r%h%=
-
-" Display line numbers
-set number
-
 " Show invisible characters
 set list
 " Use the same symbols as TextMate for tabstops and EOLs
