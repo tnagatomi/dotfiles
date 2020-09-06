@@ -37,6 +37,12 @@ fbr() {
   git switch $(echo "$branch" | awk '{print $1}' | sed "s/.* //")
 }
 
+# fgh - cd to ghq repository
+fgh() {
+  local repository=$(ghq list | fzf) &&
+  cd "$(ghq root)/${repository}"
+}
+
 # Powerlevel10k
 zinit ice depth=1; zinit light romkatv/powerlevel10k
 ## To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
