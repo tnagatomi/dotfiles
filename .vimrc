@@ -41,11 +41,6 @@ set clipboard^=unnamed
 " Delete a character with backspace in insert mode
 set backspace=start,eol,indent
 
-" Syntax highlighting
-if &t_Co > 2 || has("gui_running")
-  syntax on
-endif
-
 " Always show status line
 set laststatus=2
 " Display long a path filename for status line
