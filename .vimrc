@@ -45,6 +45,8 @@ set clipboard^=unnamed
 " Delete a character with backspace in insert mode
 set backspace=start,eol,indent
 
+" Show line numbers
+set number
 " Show invisible characters
 set list
 " Use the same symbols as TextMate for tabstops and EOLs
