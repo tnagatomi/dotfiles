@@ -123,3 +123,6 @@ vmap <M-S-Down> ]egv
 
 " Visually select the text that was last edited/pasted
 nmap gV `[v`]
+
+" Open file
+nnoremap <silent> <Leader>o :Files<CR>
