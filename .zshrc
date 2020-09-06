@@ -29,6 +29,14 @@ export FZF_DEFAULT_OPTS="--ansi"
 ## Load fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# fbr - checkout git branch
+fbr() {
+  local branches branch
+  branches=$(git --no-pager branch -vv) &&
+  branch=$(echo "$branches" | fzf +m) &&
+  git switch $(echo "$branch" | awk '{print $1}' | sed "s/.* //")
+}
+
 # Powerlevel10k
 zinit ice depth=1; zinit light romkatv/powerlevel10k
 ## To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
