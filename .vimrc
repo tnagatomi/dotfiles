@@ -8,6 +8,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install()  }  }
 Plug 'junegunn/fzf.vim'
 Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'dense-analysis/ale'
 call plug#end()
 
 colorscheme dracula
