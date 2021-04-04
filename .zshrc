@@ -62,5 +62,8 @@ export HISTSIZE=1000
 export SAVEHIST=100000
 setopt SHARE_HISTORY
 
+# Go
+export GOROOT=/usr/local/opt/go/libexec
+
 # anyenv
 eval "$(anyenv init -)"
