@@ -20,11 +20,8 @@ let delimitMate_expand_space = 1
 "End delimitMate config------------------------"
 
 " vim-airline config---------------------------"
-" Show total number of lines
-function! AirlineInit()
-    let g:airline_section_z = '%3p%% %{g:airline_symbols.linenr}%#__accent_bold#%4l%#__restore__#/%L:%3v'
-endfunction
-autocmd VimEnter * call AirlineInit()
+" Use Powerline fonts
+let g:airline_powerline_fonts = 1
 " End vim-airline config-----------------------"
 
 " Enable matchit
