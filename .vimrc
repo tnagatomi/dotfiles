@@ -60,8 +60,8 @@ set smartcase
 " Highlight searched strings
 set hlsearch
 
-" Completion format for command line mode
-set wildmenu wildmode=list:full
+" Completion menu for command line mode (zsh style)
+set wildmenu wildmode=full
 
 " Use spaces with <Tab>
 set expandtab
