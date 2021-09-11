@@ -63,7 +63,9 @@ export SAVEHIST=100000
 setopt SHARE_HISTORY
 
 # Go
+export GOPATH=$HOME/go
 export GOROOT=/usr/local/opt/go/libexec
+export PATH=$PATH:$GOPATH/bin
 
 # asdf
 . /usr/local/opt/asdf/asdf.sh
