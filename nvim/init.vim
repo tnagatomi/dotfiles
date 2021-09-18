@@ -17,7 +17,8 @@ let g:airline_powerline_fonts = 1
 " End vim-airline config-----------------------"
 
 let g:coc_global_extensions = [
-	\ 'coc-solargraph',
+  \ 'coc-solargraph',
+  \ 'coc-sh',
   \ ]
 
 " Enable True Color
