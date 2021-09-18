@@ -16,6 +16,10 @@ language en_US
 let g:airline_powerline_fonts = 1
 " End vim-airline config-----------------------"
 
+let g:coc_global_extensions = [
+	\ 'coc-solargraph',
+  \ ]
+
 " Enable True Color
 set termguicolors
 
