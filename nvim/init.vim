@@ -1,9 +1,10 @@
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'vim-airline/vim-airline'
+Plug 'airblade/vim-gitgutter'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
+Plug 'tpope/vim-surround'
+Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
 colorscheme dracula
