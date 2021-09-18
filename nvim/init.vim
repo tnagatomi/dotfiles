@@ -42,5 +42,11 @@ set softtabstop=2
 " Number of spaces for (auto) indent
 set shiftwidth=2
 
+" Restore cursor position
+autocmd BufReadPost *
+  \ if line("'\"") >= 1 && line("'\"") <= line("$") && &ft !~# 'commit'
+  \ |   exe "normal! g`\""
+  \ | endif
+
 " Disable search highlights
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
