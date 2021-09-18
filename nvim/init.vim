@@ -10,8 +10,6 @@ call plug#end()
 
 colorscheme dracula
 
-language en_US
-
 " vim-airline config---------------------------"
 let g:airline_powerline_fonts = 1
 " End vim-airline config-----------------------"

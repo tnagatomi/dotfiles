@@ -14,8 +14,6 @@ call plug#end()
 
 colorscheme dracula
 
-language en_US
-
 " delimitMate config----------------------------
 " Auto indent
 let delimitMate_expand_cr = 1
