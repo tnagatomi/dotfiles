@@ -3,6 +3,7 @@ Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'vim-airline/vim-airline'
 Plug 'airblade/vim-gitgutter'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'dense-analysis/ale'
 Plug 'tpope/vim-surround'
 Plug 'jiangmiao/auto-pairs'
 call plug#end()
@@ -12,14 +13,20 @@ colorscheme dracula
 language en_US
 
 " vim-airline config---------------------------"
-" Use Powerline fonts
 let g:airline_powerline_fonts = 1
 " End vim-airline config-----------------------"
 
+" coc.nvim config------------------------------""
 let g:coc_global_extensions = [
   \ 'coc-solargraph',
   \ 'coc-sh',
   \ ]
+" End coc.nvim config--------------------------""
+
+" ale config-----------------------------------""
+" Disable LSP to use with coc.nvim
+let g:ale_disable_lsp = 1
+" End ale config-------------------------------""
 
 " Enable True Color
 set termguicolors
