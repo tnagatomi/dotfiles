@@ -64,6 +64,9 @@ export SAVEHIST=100000
 # Use Neovim as "preferred editor"
 export VISUAL=nvim
 
+# Emacs-style key bindings
+bindkey -e
+
 # Go
 export GOPATH=$HOME/go
 export GOROOT=/usr/local/opt/go/libexec
