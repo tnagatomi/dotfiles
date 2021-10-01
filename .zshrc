@@ -21,6 +21,9 @@ autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
 ### End of Zinit's installer chunk
 
+# Emacs-style key bindings
+bindkey -e
+
 # fzf
 ## Use fd for traversing files
 export FZF_DEFAULT_COMMAND='fd --type file --color=always --follow --hidden --exclude .git'
@@ -63,9 +66,6 @@ export SAVEHIST=100000
 
 # Use Neovim as "preferred editor"
 export VISUAL=nvim
-
-# Emacs-style key bindings
-bindkey -e
 
 # Go
 export GOPATH=$HOME/go
