@@ -46,6 +46,11 @@ fgh() {
   cd "$(ghq root)/${repository}"
 }
 
+# nci - notify GitHub Actions workflows completion
+nci() {
+  gh run watch -i10 && osascript -e 'display notification "run is done!" with title "Terminal"'
+}
+
 # Powerlevel10k
 zinit ice depth=1; zinit light romkatv/powerlevel10k
 ## To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
