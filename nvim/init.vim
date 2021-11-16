@@ -60,6 +60,3 @@ autocmd BufReadPost *
 
 " Disable search highlights
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
-
-" Set IME off when ESC is pressed
-inoremap <ESC> <ESC>:set iminsert=0<CR>
