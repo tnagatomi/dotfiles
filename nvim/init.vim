@@ -57,6 +57,3 @@ autocmd BufReadPost *
   \ if line("'\"") >= 1 && line("'\"") <= line("$") && &ft !~# 'commit'
   \ |   exe "normal! g`\""
   \ | endif
-
-" Disable search highlights
-nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
