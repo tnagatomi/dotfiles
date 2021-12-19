@@ -1,0 +1,10 @@
+font:
+  normal:
+    family: MesloLGS NF
+  bold:
+    family: MesloLGS NF
+  italic:
+    family: MesloLGS NF
+  size: 13.0
+import:
+  - ~/.config/alacritty/dracula.yml
