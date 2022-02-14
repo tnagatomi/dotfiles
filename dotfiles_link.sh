@@ -8,5 +8,3 @@ ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
 ln -sf ~/dotfiles/.asdfrc ~/.asdfrc
 ln -sf ~/dotfiles/nvim/init.vim ~/.config/nvim/init.vim
 ln -sf ~/dotfiles/nvim/coc-settings.json ~/.config/nvim/coc-settings.json
-ln -sf ~/dotfiles/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
-ln -sf ~/dotfiles/alacritty/dracula.yml ~/.config/alacritty/dracula.yml
