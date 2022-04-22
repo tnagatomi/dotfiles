@@ -71,7 +71,7 @@ export VISUAL=nvim
 
 # Go
 export GOPATH=$HOME/go
-export GOROOT=/usr/local/opt/go/libexec
+export GOROOT=/opt/homebrew/opt/go/libexec
 export PATH=$PATH:$GOPATH/bin
 
 # anyenv
