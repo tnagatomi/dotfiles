@@ -69,6 +69,9 @@ export SAVEHIST=100000
 # Use Neovim as "preferred editor"
 export VISUAL=nvim
 
+# Homebrew
+export PATH=/opt/homebrew/bin:$PATH
+
 # Go
 export GOPATH=$HOME/go
 export GOROOT=/opt/homebrew/opt/go/libexec
