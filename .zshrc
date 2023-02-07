@@ -77,5 +77,4 @@ export GOPATH=$HOME/go
 export GOROOT=/opt/homebrew/opt/go/libexec
 export PATH=$PATH:$GOPATH/bin
 
-# anyenv
-eval "$(anyenv init -)"
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
