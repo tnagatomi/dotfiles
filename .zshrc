@@ -61,6 +61,10 @@ zinit light zdharma/fast-syntax-highlighting
 # Enable advanced completion
 autoload -U compinit && compinit
 
+if [ -e ~/.zshrc.company ]; then
+  source ~/.zshrc.company
+fi
+
 # History
 export HISTFILE=${HOME}/.zsh_history
 export HISTSIZE=1000
