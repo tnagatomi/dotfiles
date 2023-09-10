@@ -76,9 +76,4 @@ export VISUAL=nvim
 # Homebrew
 export PATH=/opt/homebrew/bin:$PATH
 
-# Go
-export GOPATH=$HOME/go
-export GOROOT=/opt/homebrew/opt/go/libexec
-export PATH=$PATH:$GOPATH/bin
-
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
