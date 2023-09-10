@@ -70,7 +70,8 @@ export HISTFILE=${HOME}/.zsh_history
 export HISTSIZE=1000
 export SAVEHIST=100000
 
-# Homebrew
+# PATH
 export PATH=/opt/homebrew/bin:$PATH
+export PATH=~/go/bin:$PATH
 
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
