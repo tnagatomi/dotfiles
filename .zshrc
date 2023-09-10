@@ -70,9 +70,6 @@ export HISTFILE=${HOME}/.zsh_history
 export HISTSIZE=1000
 export SAVEHIST=100000
 
-# Use Neovim as "preferred editor"
-export VISUAL=nvim
-
 # Homebrew
 export PATH=/opt/homebrew/bin:$PATH
 
