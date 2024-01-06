@@ -74,4 +74,5 @@ export SAVEHIST=100000
 export PATH=/opt/homebrew/bin:$PATH
 export PATH=~/go/bin:$PATH
 
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
+# Activate mise
+eval "$(/opt/homebrew/bin/mise activate zsh)"
