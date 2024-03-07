@@ -72,8 +72,8 @@ export SAVEHIST=100000
 
 # PATH
 export PATH=/opt/homebrew/bin:$PATH
-export PATH=~/go/bin:$PATH
 export PATH=/opt/homebrew/opt/libpq/bin:$PATH
+export PATH=${HOME}/go/bin:$PATH
 
 # Activate mise
 eval "$(mise activate zsh)"
