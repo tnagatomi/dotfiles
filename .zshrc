@@ -65,9 +65,6 @@ if [ -e ~/.zshrc.company ]; then
   source ~/.zshrc.company
 fi
 
-# Default editor
-export EDITOR=nvim
-
 # History
 export HISTFILE=${HOME}/.zsh_history
 export HISTSIZE=1000

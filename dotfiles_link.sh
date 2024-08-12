@@ -11,9 +11,3 @@ then
     mkdir -p ~/dotfiles/.config
 fi
 
-if [ -d ~/dotfiles/.config/nvim ]
-then
-    mkdir -p ~/dotfiles/.config/nvim
-fi
-
-ln -sf ~/dotfiles/.config/nvim/init.lua ~/.config/nvim/init.lua
