@@ -11,3 +11,5 @@ then
     mkdir -p ~/dotfiles/.config
 fi
 
+ln -sf ~/dotfiles/.config/starship.toml ~/.config/starship.toml
+ln -sf ~/dotfiles/.config/starship.theme.toml ~/.config/starship.theme.toml
