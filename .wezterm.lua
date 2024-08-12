@@ -8,4 +8,17 @@ config.window_decorations = "RESIZE"
 
 config.font_size = 13.0
 
+config.keys = {
+  {
+    key = 'LeftArrow',
+    mods = 'CTRL|SHIFT',
+    action = wezterm.action.DisableDefaultAssignment,
+  },
+  {
+    key = 'RightArrow',
+    mods = 'CTRL|SHIFT',
+    action = wezterm.action.DisableDefaultAssignment,
+  },
+}
+
 return config
