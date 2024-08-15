@@ -72,6 +72,7 @@ export PATH=${HOME}/go/bin:$PATH
 
 # Activate mise
 eval "$(mise activate zsh)"
+eval "$(mise activate --shims)"
 
 # Initializa Starship
 eval "$(starship init zsh)"
