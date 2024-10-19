@@ -70,6 +70,14 @@ export PATH=/opt/homebrew/bin:$PATH
 export PATH=/opt/homebrew/opt/libpq/bin:$PATH
 export PATH=${HOME}/go/bin:$PATH
 
+# pnpm
+export PNPM_HOME="${HOME}/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
 # Activate mise
 eval "$(mise activate zsh)"
 eval "$(mise activate --shims)"
