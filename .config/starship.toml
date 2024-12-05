@@ -1,3 +1,5 @@
+format = '$time$all'
+
 # Use the color palette
 palette = "dracula"
 
@@ -233,7 +235,8 @@ format = '\[[$symbol($version)]($style)\]'
 format = '\[[$symbol$workspace]($style)\]'
 
 [time]
-format = '\[[$time]($style)\]'
+disabled = false
+format = '\[[$time]($style)\] '
 
 [username]
 format = '\[[$user]($style)\]'
