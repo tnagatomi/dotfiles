@@ -70,6 +70,10 @@ export PATH=/opt/homebrew/bin:$PATH
 export PATH=/opt/homebrew/opt/libpq/bin:$PATH
 export PATH=${HOME}/go/bin:$PATH
 
+# Default editor
+export VISUAL=nvim
+export EDITOR="$VISUAL"
+
 # pnpm
 export PNPM_HOME="${HOME}/Library/pnpm"
 case ":$PATH:" in
