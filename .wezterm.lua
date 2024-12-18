@@ -2,7 +2,7 @@ local wezterm = require 'wezterm'
 
 local config = wezterm.config_builder()
 
-config.color_scheme = "Dracula (Official)"
+config.color_scheme = "Tokyo Night Moon"
 config.use_fancy_tab_bar = false
 config.window_decorations = "RESIZE"
 
