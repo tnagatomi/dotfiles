@@ -71,7 +71,7 @@ export PATH=/opt/homebrew/opt/libpq/bin:$PATH
 export PATH=${HOME}/go/bin:$PATH
 
 # Default editor
-export VISUAL=nvim
+export VISUAL=vim
 export EDITOR="$VISUAL"
 
 # pnpm
