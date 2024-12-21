@@ -12,14 +12,3 @@ fi
 
 ln -sf ~/dotfiles/.config/starship.toml ~/.config/starship.toml
 ln -sf ~/dotfiles/.config/starship.theme.toml ~/.config/starship.theme.toml
-
-src_dir="${HOME}/dotfiles/.config/nvim"
-dest_dir="${HOME}/.config/nvim"
-mkdir -p "$dest_dir"
-find "$src_dir" -type f | while read src_file; do
-  dest_file="$dest_dir/$(grealpath --relative-to="$src_dir" "$src_file")"
-
-  mkdir -p "$(dirname "$dest_file")"
-
-  ln -sf "$src_file" "$dest_file"
-done
