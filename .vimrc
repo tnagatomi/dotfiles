@@ -8,11 +8,16 @@ Plug 'tpope/vim-surround'
 Plug 'airblade/vim-gitgutter'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install()  }  }
 Plug 'junegunn/fzf.vim'
-Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'ghifarit53/tokyonight-vim'
 Plug 'dense-analysis/ale'
+Plug 'sheerun/vim-polyglot'
 call plug#end()
 
-colorscheme dracula
+" Tokyo Night colorscheme
+set termguicolors
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+colorscheme tokyonight
 
 " delimitMate config----------------------------
 " Auto indent
@@ -33,11 +38,6 @@ set nocompatible
 
 " Enable file type detection
 filetype plugin indent on
-
-" Enable True Color
-set termguicolors
-let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 
 " Yank to system clipboard
 set clipboard=unnamed
