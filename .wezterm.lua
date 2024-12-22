@@ -6,7 +6,7 @@ config.color_scheme = "Tokyo Night"
 config.use_fancy_tab_bar = false
 config.window_decorations = "RESIZE"
 
-config.font = wezterm.font 'UDEV Gothic NF35'
+config.font = wezterm.font 'UDEV Gothic 35NF'
 config.font_size = 13.0
 config.tab_max_width = 32
 
