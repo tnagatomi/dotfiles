@@ -8,3 +8,6 @@ ln -sf ~/dotfiles/.wezterm.lua ~/.wezterm.lua
 mkdir -p ~/dotfiles/.config
 
 ln -sf ~/dotfiles/.config/starship.toml ~/.config/starship.toml
+
+mkdir -p ~/dotfiles/.config/ghostty
+ln -sf ~/dotfiles/.config/ghostty/config ~/.config/ghostty/config
