@@ -8,16 +8,14 @@ Plug 'tpope/vim-surround'
 Plug 'airblade/vim-gitgutter'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install()  }  }
 Plug 'junegunn/fzf.vim'
-Plug 'ghifarit53/tokyonight-vim'
+Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 Plug 'dense-analysis/ale'
 Plug 'sheerun/vim-polyglot'
 call plug#end()
 
 " Tokyo Night colorscheme
 set termguicolors
-let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-colorscheme tokyonight
+colorscheme catppuccin_mocha
 
 " delimitMate config----------------------------
 " Auto indent
