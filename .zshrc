@@ -46,6 +46,10 @@ zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-completions
 zinit light zdharma/fast-syntax-highlighting
 
+# Zellij completion
+zinit ice as"completion"
+zinit snippet ~/.local/share/zinit/completions/_zellij
+
 # Enable advanced completion
 autoload -U compinit && compinit
 

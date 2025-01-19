@@ -1,5 +1,8 @@
 #!/bin/sh
 ln -sf ~/dotfiles/.zshrc ~/.zshrc
+mkdir -p ~/dotfiles/.local/share/zinit/completions
+ln -sf ~/dotfiles/.local/share/zinit/completions/_zellij ~/.local/share/zinit/completions/_zellij
+
 ln -sf ~/dotfiles/.vimrc ~/.vimrc
 
 mkdir -p ~/dotfiles/.config
