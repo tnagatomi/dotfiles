@@ -1,11 +1,13 @@
 #!/bin/sh
 ln -sf ~/dotfiles/.zshrc ~/.zshrc
 ln -sf ~/dotfiles/.vimrc ~/.vimrc
-ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
 
-mkdir -p ~/.config
+mkdir -p ~/dotfiles/.config
 
 ln -sf ~/dotfiles/.config/starship.toml ~/.config/starship.toml
 
-mkdir -p ~/.config/ghostty
+mkdir -p ~/dotfiles/.config/ghostty
 ln -sf ~/dotfiles/.config/ghostty/config ~/.config/ghostty/config
+
+mkdir -p ~/dotfiles/.config/zellij
+ln -sf ~/dotfiles/.config/zellij/config.kdl ~/.config/zellij/config.kdl
