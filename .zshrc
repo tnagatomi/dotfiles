@@ -78,5 +78,5 @@ esac
 # Activate mise
 eval "$(mise activate zsh)"
 
-# Initializa Starship
+# Initialize Starship
 eval "$(starship init zsh)"
