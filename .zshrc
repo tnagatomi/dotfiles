@@ -54,6 +54,12 @@ zinit light zdharma/fast-syntax-highlighting
 # Enable advanced completion
 autoload -U compinit && compinit
 
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/tnagatomi/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+# End of Docker CLI completions
+
 if [ -e ~/.zshrc.company ]; then
   source ~/.zshrc.company
 fi
