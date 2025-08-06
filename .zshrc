@@ -41,6 +41,11 @@ nci() {
   gh run watch -i10 && osascript -e 'display notification "run is done!" with title "Terminal"'
 }
 
+# gss - select from git status
+gss() {
+  git status -s | fzf -m | awk "{ print \$2 }"
+}
+
 # Plugins
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-completions
