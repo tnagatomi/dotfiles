@@ -73,6 +73,7 @@ export SAVEHIST=100000
 export PATH=/opt/homebrew/bin:$PATH
 export PATH=/opt/homebrew/opt/libpq/bin:$PATH
 export PATH=${HOME}/go/bin:$PATH
+export PATH=${HOME}/.local/bin:$PATH
 
 # Default editor
 export VISUAL=vim
