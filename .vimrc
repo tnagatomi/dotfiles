@@ -13,7 +13,7 @@ Plug 'dense-analysis/ale'
 Plug 'sheerun/vim-polyglot'
 call plug#end()
 
-" Tokyo Night colorscheme
+" catppuccin_mocha colorscheme
 set termguicolors
 colorscheme catppuccin_mocha
 
