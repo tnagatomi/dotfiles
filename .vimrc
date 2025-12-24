@@ -18,7 +18,6 @@ set termguicolors
 colorscheme catppuccin_mocha
 
 " delimitMate config----------------------------
-" Auto indent
 let delimitMate_expand_cr = 1
 let delimitMate_expand_space = 1
 "End delimitMate config------------------------"
