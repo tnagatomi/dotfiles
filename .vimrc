@@ -10,7 +10,6 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install()  }  }
 Plug 'junegunn/fzf.vim'
 Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 Plug 'dense-analysis/ale'
-Plug 'sheerun/vim-polyglot'
 call plug#end()
 
 " catppuccin_mocha colorscheme
