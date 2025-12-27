@@ -30,6 +30,14 @@ fbr() {
   git switch $(echo "$branch" | awk '{print $1}' | sed "s/.* //")
 }
 
+# fwt - cd to git worktree
+fwt() {
+  local branches branch
+  worktrees=$(git worktree list) &&
+  worktree=$(echo "$worktrees" | fzf +m) &&
+  cd $(echo "$worktree" | awk '{print $1}')
+}
+
 # fgh - cd to ghq repository
 fgh() {
   local repository=$(ghq list | fzf) &&
