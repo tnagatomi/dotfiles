@@ -95,6 +95,9 @@ case ":$PATH:" in
 esac
 # pnpm end
 
+# git-wt completion
+eval "$(git wt --init zsh)"
+
 # Activate mise
 eval "$(mise activate zsh)"
 
