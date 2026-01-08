@@ -33,11 +33,6 @@ config.keys = {
     mods = "OPT",
     action = wezterm.action { SendString="\x1bf" }
   },
-  {
-    key="Enter",
-    mods="SHIFT",
-    action=wezterm.action{SendString="\x1b\r"}
-  },
 }
 
 return config

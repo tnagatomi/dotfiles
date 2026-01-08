@@ -1,3 +1,2 @@
 theme = Catppuccin Mocha
 font-family = UDEV Gothic 35NF
-keybind = shift+enter=text:\x1b\r
