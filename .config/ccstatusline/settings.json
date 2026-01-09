@@ -1,0 +1,41 @@
+{
+  "version": 3,
+  "lines": [
+    [
+      {
+        "id": "1",
+        "type": "context-percentage",
+        "color": "yellow",
+        "bold": true,
+        "rawValue": true
+      }
+    ],
+    [
+      {
+        "id": "0f20498a-5dda-43a2-99c9-1fd166e267c2",
+        "type": "custom-command",
+        "commandPath": "npx -y ccusage@latest statusline",
+        "timeout": 5000,
+        "preserveColors": true
+      }
+    ],
+    []
+  ],
+  "flexMode": "full-minus-40",
+  "compactThreshold": 60,
+  "colorLevel": 2,
+  "inheritSeparatorColors": false,
+  "globalBold": false,
+  "powerline": {
+    "enabled": false,
+    "separators": [
+      ""
+    ],
+    "separatorInvertBackground": [
+      false
+    ],
+    "startCaps": [],
+    "endCaps": [],
+    "autoAlign": false
+  }
+}
