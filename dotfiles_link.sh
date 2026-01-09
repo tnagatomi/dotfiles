@@ -10,3 +10,8 @@ ln -sf ~/dotfiles/.config/starship.toml ~/.config/starship.toml
 
 mkdir -p ~/.config/ghostty
 ln -sf ~/dotfiles/.config/ghostty/config ~/.config/ghostty/config
+
+mkdir -p ~/.claude
+
+ln -sf ~/dotfiles/.claude/statusline-wrapper.sh ~/.claude/statusline-wrapper.sh
+ln -sf ~/dotfiles/.claude/statusline-command.sh ~/.claude/statusline-command.sh
