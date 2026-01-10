@@ -19,3 +19,5 @@ ln -sf ~/dotfiles/.claude/statusline-command.sh ~/.claude/statusline-command.sh
 mkdir -p ~/.config/ccstatusline
 
 ln -sf ~/dotfiles/.config/ccstatusline/settings.json ~/.config/ccstatusline/settings.json
+
+ln -sf ~/dotfiles/.config/karabiner ~/.config/karabiner
