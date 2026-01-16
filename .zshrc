@@ -27,7 +27,7 @@ fbr() {
   local branches branch
   branches=$(git --no-pager branch -vv) &&
   branch=$(echo "$branches" | fzf +m) &&
-  git switch $(echo "$branch" | awk '{print $1}' | sed "s/.* //")
+  git switch $(echo "$branch" | sed 's/^[*+ ]*//' | awk '{print $1}')
 }
 
 # fwt - cd to git worktree
