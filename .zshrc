@@ -19,8 +19,8 @@ autoload -Uz _zinit
 export FZF_DEFAULT_COMMAND='fd --type file --color=always --follow --hidden --exclude .git'
 ## Output with colors
 export FZF_DEFAULT_OPTS="--ansi"
-## Load fzf
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
 
 # fbr - checkout git branch
 fbr() {
