@@ -20,4 +20,4 @@ mkdir -p ~/.config/ccstatusline
 
 ln -sf ~/dotfiles/.config/ccstatusline/settings.json ~/.config/ccstatusline/settings.json
 
-ln -sf ~/dotfiles/.config/karabiner ~/.config/karabiner
+ln -sf ~/dotfiles/.config/karabiner/karabiner.json ~/.config/karabiner/karabiner.json
