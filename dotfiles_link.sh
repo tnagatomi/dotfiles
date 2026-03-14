@@ -11,6 +11,9 @@ ln -sf ~/dotfiles/.config/starship.toml ~/.config/starship.toml
 mkdir -p ~/.config/ghostty
 ln -sf ~/dotfiles/.config/ghostty/config ~/.config/ghostty/config
 
+mkdir -p ~/.config/zed
+ln -sf ~/dotfiles/.config/zed/settings.json ~/.config/zed/settings.json
+
 mkdir -p ~/.claude
 
 ln -sf ~/dotfiles/.claude/statusline-wrapper.sh ~/.claude/statusline-wrapper.sh
