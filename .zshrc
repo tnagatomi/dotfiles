@@ -84,7 +84,7 @@ export PATH=${HOME}/go/bin:$PATH
 export PATH=${HOME}/.local/bin:$PATH
 
 # Default editor
-export VISUAL="zed --wait"
+export VISUAL="zed --wait --new"
 export EDITOR="$VISUAL"
 
 # pnpm
