@@ -1,3 +1,4 @@
 auto-update-channel = tip
 theme = Catppuccin Mocha
 font-family = UDEV Gothic 35NF
+macos-option-as-alt = true
