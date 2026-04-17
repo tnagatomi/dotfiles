@@ -98,5 +98,8 @@ esac
 # git-wt completion
 eval "$(git wt --init zsh)"
 
+# Activate mise
+eval "$(mise activate zsh)"
+
 # Initialize Starship
 eval "$(starship init zsh)"
