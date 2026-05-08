@@ -25,3 +25,7 @@ mkdir -p ~/.config/ccstatusline
 ln -sf ~/dotfiles/.config/ccstatusline/settings.json ~/.config/ccstatusline/settings.json
 
 ln -sf ~/dotfiles/.config/karabiner/karabiner.json ~/.config/karabiner/karabiner.json
+
+mkdir -p ~/.local/scripts
+
+ln -sf ~/dotfiles/scripts/wts ~/.local/scripts/wts

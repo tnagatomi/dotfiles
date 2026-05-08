@@ -1,0 +1,40 @@
+#!/bin/sh
+# wts - create a git worktree and start a tmux session with preset windows.
+#
+# Usage: wts <worktree-name>
+#
+# Run from a git repository (e.g. after `fgh`). Creates the worktree via
+# `git wt`, then starts (or attaches to) a tmux session named after the
+# worktree with windows: work, claude, dev, hunk.
+
+set -e
+
+if [ "$#" -ne 1 ] || [ -z "$1" ]; then
+  echo "usage: wts <worktree-name>" >&2
+  exit 1
+fi
+name="$1"
+
+if [ -n "$TMUX" ]; then
+  echo "wts: already inside a tmux session; refusing to nest." >&2
+  exit 1
+fi
+
+wt_path="$(git wt --nocd "$name")"
+if [ -z "$wt_path" ]; then
+  echo "wts: could not resolve worktree path for '$name'" >&2
+  exit 1
+fi
+
+session="$(printf '%s' "$name" | tr '.:/ ' '____')"
+
+if tmux has-session -t "$session" 2>/dev/null; then
+  exec tmux attach -t "$session"
+fi
+
+tmux new-session -d -s "$session" -n work   -c "$wt_path"
+tmux new-window  -t "$session"    -n claude -c "$wt_path" 'claude'
+tmux new-window  -t "$session"    -n dev    -c "$wt_path"
+tmux new-window  -t "$session"    -n hunk   -c "$wt_path"
+tmux select-window -t "$session:work"
+exec tmux attach -t "$session"
