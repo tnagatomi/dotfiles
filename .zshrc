@@ -88,6 +88,9 @@ export PATH=${HOME}/.local/scripts:$PATH
 export VISUAL=vim
 export EDITOR="$VISUAL"
 
+# GPG key
+export GPG_TTY=$(tty)
+
 # pnpm
 export PNPM_HOME="${HOME}/Library/pnpm"
 case ":$PATH:" in
