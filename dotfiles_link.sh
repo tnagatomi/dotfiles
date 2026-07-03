@@ -12,6 +12,9 @@ ln -sf ~/dotfiles/.config/starship.toml ~/.config/starship.toml
 mkdir -p ~/.config/ghostty
 ln -sf ~/dotfiles/.config/ghostty/config ~/.config/ghostty/config
 
+mkdir -p ~/.config/herdr
+ln -sf ~/dotfiles/.config/herdr/config.toml ~/.config/herdr/config.toml
+
 mkdir -p ~/.config/zed
 ln -sf ~/dotfiles/.config/zed/settings.json ~/.config/zed/settings.json
 
