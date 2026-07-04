@@ -2,6 +2,11 @@ onboarding = false
 
 [keys]
 prefix = "ctrl+space"
+previous_workspace = "prefix+k"
+next_workspace = "prefix+j"
+switch_workspace = "prefix+shift+1..9"
+previous_agent = "prefix+,"
+next_agent = "prefix+."
 split_vertical = "prefix+|"
 split_horizontal = "prefix+-"
 
