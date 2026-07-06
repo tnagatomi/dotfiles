@@ -1,0 +1,11 @@
+id = "tnagatomi.worktree-tabs"
+name = "Worktree Tabs"
+version = "0.1.0"
+min_herdr_version = "0.7.0"
+description = "On worktree creation, set up work/claude/codex/dev tabs and auto-launch claude/codex"
+platforms = ["macos"]
+
+# Fires on every worktree creation: UI (prefix+shift+g), sidebar, and CLI
+[[events]]
+on = "worktree.created"
+command = ["bash", "bootstrap.sh"]

@@ -14,6 +14,10 @@ ln -sf ~/dotfiles/.config/ghostty/config ~/.config/ghostty/config
 
 mkdir -p ~/.config/herdr
 ln -sf ~/dotfiles/.config/herdr/config.toml ~/.config/herdr/config.toml
+ln -sfn ~/dotfiles/.config/herdr/plugins ~/.config/herdr/plugins
+# Register the herdr plugins
+# Run once after herdr has started:
+#   herdr plugin link ~/.config/herdr/plugins/worktree-tabs
 
 mkdir -p ~/.config/zed
 ln -sf ~/dotfiles/.config/zed/settings.json ~/.config/zed/settings.json
