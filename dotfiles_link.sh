@@ -27,6 +27,10 @@ mkdir -p ~/.claude
 ln -sf ~/dotfiles/.claude/statusline-wrapper.sh ~/.claude/statusline-wrapper.sh
 ln -sf ~/dotfiles/.claude/statusline-command.sh ~/.claude/statusline-command.sh
 
+mkdir -p ~/.claude/hooks
+
+ln -sf ~/dotfiles/.claude/hooks/message-display-cost.sh ~/.claude/hooks/message-display-cost.sh
+
 mkdir -p ~/.config/ccstatusline
 
 ln -sf ~/dotfiles/.config/ccstatusline/settings.json ~/.config/ccstatusline/settings.json
